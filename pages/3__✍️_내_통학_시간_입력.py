@@ -25,7 +25,7 @@ if not spreadsheet:
     st.stop()
 
 conn = st.connection("gsheets", type = GSheetsConnection)
-df = conn.read(spreadsheet = spreadsheet, worksheet = "측정자료", usecols = [0,1,2], ttl = 0)
+df = conn.read(spreadsheet = spreadsheet, worksheet = 655941621, usecols = [0,1,2], ttl = 0)
 # st.write(df)
 
 # 통학시간 제출하기
